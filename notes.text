@@ -1,0 +1,32 @@
+How to create and API with Mongodb.
+1. create a folder with gitbash
+2. npm init (to install package.json)
+3. install express.. and the rest...
+{
+  "name": "mongoapi",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^2.6.1",
+    "bcrypt-nodejs": "0.0.3",
+    "connect-flash": "^0.1.1",
+    "crypto": "^1.0.1",
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "express-session": "^1.15.6",
+    "mongoose": "^5.2.4",
+    "nodemailer": "^4.6.7",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0"
+  }
+}
+4. Then create a database on a database.js file and the function to connect and create a 
+database function is present in that folder. 
+

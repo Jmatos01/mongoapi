@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../assets/main.css">
+    <title>Blog Sign In</title>
+</head>
+
+<body>
+    <form action="/sign-up" method="POST">
+        <div>
+            <% if (message.legnth) {%>
+                <div class="alert">
+                    <!-- this mesaage comes from routes/views when rendea la pagina y lanza el mensage con flash -->
+                    <%= message%>
+                </div>
+                <%}%>
+        </div>
+
+        <div>
+            <label for="email">Email</label>
+            <input type="email" class="form-input" required/>
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <input type="password" class="form-input" required/>
+        </div>
+        <div>
+            <label for="password-confirmation">Password Confirmation</label>
+            <input type="password-confirmation" class="form-input" required/>
+        </div>
+        <button type="submit">Sign In</button>
+    </form>
+    Dont have an account?
+    <a href="/sign-up">Sign Up</a>
+    Forgot your password?
+    <a href="/password_recovery">Recover</a>
+    <script src="/main.js"></script>
+</body>
+
+</html>
